@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volatura — Data Deletion</title>
+  <style>
+    :root { --ink: #1f2a38; --ink-2: #6b7785; --accent: #2c4257; --line: #e4e8ec; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: #ffffff; color: var(--ink);
+      font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6; -webkit-text-size-adjust: 100%;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+    h1 { font-size: 1.9rem; margin: 0 0 4px; letter-spacing: .3px; }
+    h2 { font-size: 1.15rem; margin: 34px 0 8px; color: var(--accent); }
+    .meta { color: var(--ink-2); font-size: .92rem; margin-bottom: 24px; }
+    .meta div { margin: 2px 0; }
+    ol li, ul li { margin: 6px 0; }
+    a { color: var(--accent); }
+    table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: .95rem; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f4f6f8; }
+    code { background: #f4f6f8; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+    hr { border: none; border-top: 1px solid var(--line); margin: 28px 0; }
+    .lead { font-size: 1.05rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Data Deletion — Volatura</h1>
+    <div class="meta">
+      <div><strong>App:</strong> Volatura (<code>com.volatura.app</code>)</div>
+      <div><strong>Developer:</strong> HornKru</div>
+      <div><strong>Contact:</strong> <a href="mailto:volatura.app@gmail.com">volatura.app@gmail.com</a></div>
+    </div>
+
+    <p class="lead">This page explains how to delete the data associated with the
+    <strong>Volatura</strong> app by <strong>HornKru</strong>, and what is deleted or retained.
+    Volatura requires no account and does not collect your name or email, so most of
+    your data lives on your own device or in your own Google Drive and is entirely
+    under your control.</p>
+
+    <h2>How to request or perform deletion</h2>
+    <ol>
+      <li><strong>Data on your device</strong> — Delete individual scores, annotations,
+        setlists, or recordings from within the app, or <strong>uninstall Volatura</strong> to
+        remove all of its on-device data at once.</li>
+      <li><strong>Your Google Drive backup</strong> (only if you enabled Cloud Backup) — In
+        the app, open <strong>Settings → Cloud Backup</strong>, turn it off, and choose to delete
+        the backup; or delete the app's data folder directly from your own Google
+        Drive. This data is stored only in <em>your</em> Google account.</li>
+      <li><strong>Crash reports</strong> — In <strong>Settings</strong>, turn <strong>crash reporting off</strong> to stop
+        any further collection. To request deletion of crash data already collected,
+        email <a href="mailto:volatura.app@gmail.com">volatura.app@gmail.com</a>.</li>
+      <li><strong>Feedback / bug reports you sent</strong> — To request deletion of a report you
+        submitted, email <a href="mailto:volatura.app@gmail.com">volatura.app@gmail.com</a>
+        describing the report. We aim to action deletion requests within 30 days.</li>
+    </ol>
+
+    <h2>What is deleted and what is retained</h2>
+    <table>
+      <tr><th>Data</th><th>Where it lives</th><th>Deletion / retention</th></tr>
+      <tr>
+        <td>Your library: PDFs, annotations, bookmarks, setlists, notes, recordings</td>
+        <td>On your device</td>
+        <td>Deleted when you delete the items or uninstall the app. Not retained by the developer.</td>
+      </tr>
+      <tr>
+        <td>Cloud backup of your library</td>
+        <td>Your own Google Drive (private app folder)</td>
+        <td>Removed when you delete the backup in the app or in your Drive. The developer cannot access it.</td>
+      </tr>
+      <tr>
+        <td>Crash reports (device model, OS, app version, stack trace)</td>
+        <td>Firebase (developer)</td>
+        <td>Only collected with your consent. Deleted on request; otherwise retained only as long as needed to fix the issue.</td>
+      </tr>
+      <tr>
+        <td>Feedback / bug reports (your message + device/app info)</td>
+        <td>Firebase (developer)</td>
+        <td>Sent only when you submit one. Contains no account identifier. Deleted on request; otherwise retained only as long as needed to resolve the issue.</td>
+      </tr>
+      <tr>
+        <td>Anonymous security identifier (abuse prevention)</td>
+        <td>Firebase (developer)</td>
+        <td>A random, non-identifying token; automatically expires and is not linked to you.</td>
+      </tr>
+    </table>
+
+    <p>See also our <a href="./index.html">Privacy Policy</a>.</p>
+
+    <hr>
+    <p class="meta">© 2026 HornKru · Volatura</p>
+  </div>
+</body>
+</html>
